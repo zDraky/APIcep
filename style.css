@@ -41,7 +41,7 @@ label {
 }
 
 input {
-  flex: 1; /* Faz os inputs ocuparem o espaço restante */
+  flex: 1;
   padding: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -54,4 +54,31 @@ input {
   padding: 10px;
   width: 100px;
   margin: auto;
+}
+
+.button-1 {
+  background-color: #52a6d6;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 1px solid #3a85b2;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-1:hover {
+  background-color: #3a85b2;
+  transform: scale(1.05);
+}
+
+.button-1:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(82, 166, 214, 0.8);
+}
+
+.button-1:active {
+  background-color: #2c7fa3;
+  transform: scale(0.98);
 }
